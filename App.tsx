@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { 
   Menu, X, ArrowRight, Mouse, RadioTower, ShieldCheck, Zap, 
   CloudCog, Network, CheckCircle2, Star, MessageCircle, Phone, 
-  MapPin, Clock, Mail, Instagram, Linkedin, Facebook, TrendingUp, ChevronDown 
+  MapPin, Clock, Mail, Instagram, Linkedin, Facebook, TrendingUp, ChevronDown, ExternalLink 
 } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -145,6 +145,7 @@ const App: React.FC = () => {
               src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" 
               alt="Background" 
               className="w-full h-full object-cover opacity-60 scale-105" 
+              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-900/80 to-dark-900"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-dark-900 via-transparent to-dark-900/50"></div>
@@ -210,7 +211,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent z-10"></div>
                 {/* Updated to use Google Drive thumbnail endpoint which is often more reliable for embeds than the view endpoint */}
                 <img 
-                  src="https://drive.google.com/thumbnail?id=17yTWj7XkAv34KOnSu52QJHiOn3AXxlXu&sz=w1000" 
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Telecom" 
                   referrerPolicy="no-referrer"
@@ -230,14 +231,14 @@ const App: React.FC = () => {
                 <img 
                   src="https://drive.google.com/thumbnail?id=14ITGcVwRR8rq-w_JmxJWBwaI4z5yaV51&sz=w1000" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" 
-                  alt="IT Management" 
+                  alt="IT Governance" 
                   referrerPolicy="no-referrer"
                 />
                 <div className="relative z-20 h-full flex flex-col">
                   <div className="w-12 h-12 bg-brand-cyan/20 backdrop-blur-md rounded-xl flex items-center justify-center mb-6 border border-brand-cyan/30 text-brand-cyan">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Gestão de TI (MSP)</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">Governança de TI (MSP)</h3>
                   <p className="text-gray-400 mb-6 text-sm">Suporte proativo e monitoramento 24/7. Deixamos sua TI invisível.</p>
                   <ul className="space-y-3 mt-auto">
                     <li className="flex items-center text-gray-300 text-sm gap-2"><CheckCircle2 className="w-4 h-4 text-brand-cyan" /> Prevenção de Falhas</li>
@@ -251,7 +252,7 @@ const App: React.FC = () => {
               <div className="bento-card col-span-1 md:col-span-1 md:row-span-2 glass p-8 rounded-3xl relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/20 to-transparent z-10"></div>
                 <img 
-                  src="https://drive.google.com/thumbnail?id=1KnfhTJLnak7vk2wAtomX8WCR_6j5-hZX&sz=w1000" 
+                  src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Energy Efficiency" 
                   referrerPolicy="no-referrer"
@@ -272,7 +273,7 @@ const App: React.FC = () => {
               <div className="bento-card col-span-1 md:col-span-2 md:row-span-1 glass p-8 rounded-3xl relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-900/80 via-dark-900/40 to-transparent z-10"></div>
                 <img 
-                  src="https://drive.google.com/thumbnail?id=1dStzZYPgCRoellr7ITAxGYYusQvw-Kq5&sz=w1000" 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Cloud Communication" 
                   referrerPolicy="no-referrer"
@@ -292,7 +293,7 @@ const App: React.FC = () => {
               <div className="bento-card col-span-1 md:col-span-1 md:row-span-1 glass p-8 rounded-3xl relative overflow-hidden flex flex-col justify-center group">
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-900/90 to-dark-900/40 z-10"></div>
                 <img 
-                  src="https://drive.google.com/thumbnail?id=1POYsC0yZeZy7nnnoseFZaazm0ysoMUc_&sz=w1000" 
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2068&auto=format&fit=crop" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Infraestrutura" 
                   referrerPolicy="no-referrer"
@@ -342,7 +343,7 @@ const App: React.FC = () => {
 
             <div className="relative" ref={addToRefs}>
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" alt="Equipe" className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700" />
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" alt="Equipe" className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700" referrerPolicy="no-referrer" />
                 <div className="absolute bottom-6 left-6 right-6 bg-dark-900/90 backdrop-blur-xl p-6 rounded-xl border border-white/10">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
@@ -376,7 +377,7 @@ const App: React.FC = () => {
                   <p className="text-gray-300 mb-6 italic">"{item.text}"</p>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gray-700 rounded-full overflow-hidden">
-                      <img src={item.img} alt={item.name} className="w-full h-full object-cover" />
+                      <img src={item.img} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
                     <div>
                       <p className="text-white font-semibold text-sm">{item.name}</p>
@@ -418,18 +419,41 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-4">
                 <div>
                   <h5 className="text-white font-bold mb-2 flex items-center gap-2"><MapPin className="w-4 h-4 text-brand-blue" /> Endereço</h5>
-                  <p className="text-gray-400 text-sm">R. Homero de Miranda Gomes, 1547<br/>Loja A - Jardim Janaina<br/>Biguaçu - SC, 88162-210</p>
+                  <a 
+                    href="https://maps.app.goo.gl/ZSwEB7UY9AzMXbNP8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-400 text-sm hover:text-brand-cyan transition-colors block mb-4"
+                  >
+                    R. Homero de Miranda Gomes, 1547<br/>Loja A - Jardim Janaina<br/>Biguaçu - SC, 88162-210
+                  </a>
+                  <a 
+                    href="https://maps.app.goo.gl/ZSwEB7UY9AzMXbNP8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-brand-cyan hover:text-white transition-colors uppercase tracking-wider group"
+                  >
+                    Ver no Google Maps
+                    <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
                 </div>
-                <div className="w-full h-40 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 shadow-lg relative group">
                     <iframe 
                         title="Google Maps Location"
                         width="100%" 
                         height="100%" 
                         style={{border:0}}
                         loading="lazy"
-                        src="https://maps.google.com/maps?q=R.+Homero+de+Miranda+Gomes,+1547+-+Jardim+Janaina,+Bigua%C3%A7u+-+SC&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=SOTIC%20Sistemas%20e%20Telecomunica%C3%A7%C3%B5es%20R.%20Homero%20de%20Miranda%20Gomes,%201547%20-%20Jardim%20Janaina,%20Bigua%C3%A7u%20-%20SC&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         className="filter grayscale hover:grayscale-0 transition-all duration-300 opacity-80 hover:opacity-100"
                     ></iframe>
+                    <a 
+                      href="https://maps.app.goo.gl/ZSwEB7UY9AzMXbNP8" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="absolute inset-0 z-10 cursor-pointer"
+                      title="Abrir no Google Maps"
+                    ></a>
                 </div>
               </div>
               <div>

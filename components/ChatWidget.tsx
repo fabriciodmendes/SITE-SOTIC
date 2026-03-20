@@ -118,6 +118,7 @@ const ChatWidget: React.FC = () => {
                       : 'bg-white/5 text-gray-200 border border-white/5 rounded-bl-none'
                   }`}
                 >
+                <div className="markdown-content prose prose-invert prose-sm max-w-none">
                   <ReactMarkdown 
                     components={{
                         a: ({node, ...props}) => <a {...props} className="text-brand-cyan underline" target="_blank" rel="noopener noreferrer" />
@@ -125,6 +126,7 @@ const ChatWidget: React.FC = () => {
                   >
                       {msg.text}
                   </ReactMarkdown>
+                </div>
                 </div>
 
                 {/* Grounding / Map Results */}

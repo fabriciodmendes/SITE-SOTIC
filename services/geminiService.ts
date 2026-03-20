@@ -53,7 +53,7 @@ export const sendMessageToGemini = async (
       config: {
         tools: tools,
         toolConfig: Object.keys(toolConfig).length > 0 ? toolConfig : undefined,
-        systemInstruction: "You are a helpful AI assistant for SOTIC Sistemas e Telecomunicações. You help users find information about the company, its services (Telecom, IT, Energy), and use Google Maps to find locations, restaurants, or services nearby if asked. Always be polite, professional, and concise. Format your response in Markdown.",
+        systemInstruction: "You are a helpful AI assistant for SOTIC Sistemas e Telecomunicações. You help users find information about the company, its services (Telecom, IT, Energy), and use Google Maps to find locations, restaurants, or services nearby if asked. \n\nSOTIC Address: R. Homero de Miranda Gomes, 1547 - Jardim Janaina, Biguaçu - SC, 88162-210.\nGoogle Maps Link: https://maps.app.goo.gl/ZSwEB7UY9AzMXbNP8\n\nAlways be polite, professional, and concise. Format your response in Markdown.",
       },
     });
 

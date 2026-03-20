@@ -1,6 +1,6 @@
 {
-  "name": "Copy of SOTIC AI Assistant",
-  "description": "An interactive map-based chatbot for SOTIC Systems using Google Maps and Search grounding.",
+  "name": "SOTIC Sistemas e Telecomunicações",
+  "description": "Landing page institucional para SOTIC, integrando Telecom, TI e Eficiência Energética com assistente de IA.",
   "requestFramePermissions": [
     "geolocation"
   ]
