@@ -479,9 +479,9 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+              <a href="https://www.instagram.com/sotic_telecom?igsh=MTlvazg4dG13cWNveg==" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-500 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
+              <a href="https://www.facebook.com/share/1B72c8cJ6Z/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
             </div>
           </div>
         </footer>
