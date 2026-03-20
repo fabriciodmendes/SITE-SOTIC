@@ -7,6 +7,7 @@ import {
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ChatWidget from './components/ChatWidget';
+import { Logo } from './components/Logo';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,8 +105,8 @@ const App: React.FC = () => {
       {/* Header */}
       <header className={`fixed w-full top-0 z-40 transition-all duration-300 border-b border-white/5 bg-dark-900/70 backdrop-blur-xl py-4`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <a href="#" className="font-display font-bold text-2xl tracking-tighter text-white z-50">
-            SOTIC<span className="text-brand-blue">.</span>
+          <a href="#" className="z-50">
+            <Logo />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -471,8 +472,11 @@ const App: React.FC = () => {
         {/* Footer */}
         <footer className="bg-black border-t border-white/5 py-10">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-gray-500 text-sm">
-              &copy; 2026 SOTIC Sistemas e Telecomunicações.
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <Logo className="scale-75 origin-left" />
+              <div className="text-gray-500 text-xs mt-2">
+                &copy; 2026 Sotic Sistemas e Telecomunicações.
+              </div>
             </div>
             <div className="flex gap-6">
               <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>

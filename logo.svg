@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 120">
+  <!-- Ícone Estilizado -->
+  <g transform="translate(10, 10)">
+    <path d="M75 30 C 75 20, 25 20, 25 30 L 25 45 C 25 55, 75 55, 75 65 L 75 80 C 75 90, 25 90, 25 80" 
+          fill="none" stroke="#0066FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="25" cy="30" r="5" fill="#0066FF"/>
+    <circle cx="75" cy="45" r="5" fill="#0066FF"/>
+    <circle cx="25" cy="65" r="5" fill="#0066FF"/>
+    <circle cx="75" cy="80" r="5" fill="#0066FF"/>
+    <path d="M40 37 L 60 37" stroke="#0066FF" stroke-width="4"/>
+    <path d="M40 73 L 60 73" stroke="#0066FF" stroke-width="4"/>
+  </g>
+  <!-- Texto Principal -->
+  <text x="110" y="65" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#0066FF">Sotic</text>
+  <!-- Slogan -->
+  <text x="110" y="95" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="#666666" font-weight="500">SISTEMAS E TELECOM</text>
+</svg>
