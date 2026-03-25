@@ -11,10 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+    <script>
+      // Debugging blank page issues
+      window.onerror = function(msg, url, line) {
+        console.error('Runtime Error:', msg, 'at', url, ':', line);
+        return false;
+      };
+    </script>
+    <script type="module" src="./index.tsx"></script>
+    <noscript>Você precisa habilitar o JavaScript para ver este site.</noscript>
 </body>
 </html>
