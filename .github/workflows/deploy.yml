@@ -28,8 +28,10 @@ jobs:
       - name: 🏗️ Build Project
         run: npm run build
         env:
-          # Adicione esta variável caso sua aplicação dependa dela durante o build
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: 🔍 Verify Build Folder
+        run: ls -la dist/
 
       - name: 📂 Sync files (Deploy to Hostinger)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -38,5 +40,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/ # O diretório de build do Vite
-          server-dir: ./public_html/ # Cuidado: se o seu domínio for num subdiretório, ajuste isso!
-          dangerous-clean-slate: false # 'false' para não apagar tudo no servidor (mais seguro), mude para 'true' apenas se tiver certeza
+          server-dir: ./
+          dangerous-clean-slate: true # Garante que o servidor fique igual ao build local
