@@ -39,6 +39,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ # O diretório de build do Vite
-          server-dir: ./
-          dangerous-clean-slate: true # Garante que o servidor fique igual ao build local
+          local-dir: ./dist/ 
+          server-dir: public_html/
+          dangerous-clean-slate: true
+          log-level: verbose
