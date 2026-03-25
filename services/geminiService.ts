@@ -3,7 +3,8 @@ import { UserLocation, GroundingChunk } from "../types";
 
 // Using gemini-2.5-flash as it is the only model series that currently supports Google Maps Grounding
 // per the specific system instructions provided.
-const MODEL_NAME = "gemini-2.5-flash";
+// Using gemini-1.5-flash which supports Google Search and Maps Grounding
+const MODEL_NAME = "gemini-1.5-flash";
 
 let ai: GoogleGenAI | null = null;
 

@@ -212,7 +212,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent z-10"></div>
                 {/* Updated to use Google Drive thumbnail endpoint which is often more reliable for embeds than the view endpoint */}
                 <img 
-                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" 
+                  src="https://drive.google.com/thumbnail?id=17yTWj7XkAv34KOnSu52QJHiOn3AXxlXu&sz=w1200" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Telecom" 
                   referrerPolicy="no-referrer"
