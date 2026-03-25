@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # O workflow será acionado quando algo for enviado para a branch 'main'
+  workflow_dispatch: # Permite rodar manualmente pelo site do GitHub
 
 jobs:
   web-deploy:
