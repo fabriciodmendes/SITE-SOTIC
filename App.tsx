@@ -212,7 +212,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent z-10"></div>
                 {/* Updated to use Google Drive thumbnail endpoint which is often more reliable for embeds than the view endpoint */}
                 <img 
-                  src="https://drive.google.com/thumbnail?id=17yTWj7XkAv34KOnSu52QJHiOn3AXxlXu&sz=w1200" 
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" 
                   alt="Telecom" 
                   referrerPolicy="no-referrer"
@@ -400,7 +400,7 @@ const App: React.FC = () => {
             <p className="text-gray-400 text-xl mb-10 max-w-2xl mx-auto">Converse com nossos consultores e descubra como integrar tecnologia e energia pode transformar seu negócio.</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap">
-              <a href="https://api.whatsapp.com/send?phone=5548999311189" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-[#25D366]/30 flex items-center justify-center gap-3">
+              <a href="https://wa.me/554839950175" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-[#e5e5e5] rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-[#25D366]/30 flex items-center justify-center gap-3">
                 <MessageCircle className="w-6 h-6" />
                 Chamar no WhatsApp
               </a>
@@ -410,9 +410,9 @@ const App: React.FC = () => {
                 Enviar E-mail
               </a>
 
-              <a href="tel:5548999311189" className="w-full sm:w-auto px-8 py-4 glass hover:bg-white/10 text-white rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3">
+              <a href="tel:554839950175" className="w-full sm:w-auto px-8 py-4 glass hover:bg-white/10 text-white rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3">
                 <Phone className="w-6 h-6" />
-                (48) 99931-1189
+                (48) 3995-0175
               </a>
             </div>
 
@@ -463,7 +463,7 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h5 className="text-white font-bold mb-2 flex items-center gap-2"><Mail className="w-4 h-4 text-brand-blue" /> Contato</h5>
-                <p className="text-gray-400 text-sm">fabricio@sotic.com.br<br/>(48) 3995-0175<br/>(48) 99931-1189</p>
+                <p className="text-gray-400 text-sm">fabricio@sotic.com.br<br/>(48) 3995-0175</p>
               </div>
             </div>
           </div>
